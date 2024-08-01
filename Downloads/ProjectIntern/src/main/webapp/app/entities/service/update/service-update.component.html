@@ -1,0 +1,131 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-service-heading" data-cy="ServiceCreateUpdateHeading" jhiTranslate="projectinternApp.service.home.createOrEditLabel">
+        Create or edit a Service
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        @if (editForm.controls.id.value !== null) {
+          <div class="mb-3">
+            <label class="form-label" for="field_id" jhiTranslate="projectinternApp.service.id">ID</label>
+            <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+          </div>
+        }
+
+        <div class="mb-3">
+          <label class="form-label" for="field_nom" jhiTranslate="projectinternApp.service.nom">Nom</label>
+          <input type="text" class="form-control" name="nom" id="field_nom" data-cy="nom" formControlName="nom" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_description" jhiTranslate="projectinternApp.service.description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            name="description"
+            id="field_description"
+            data-cy="description"
+            formControlName="description"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_prix" jhiTranslate="projectinternApp.service.prix">Prix</label>
+          <input type="number" class="form-control" name="prix" id="field_prix" data-cy="prix" formControlName="prix" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_disposability" jhiTranslate="projectinternApp.service.disposability">Disposability</label>
+          <input
+            type="text"
+            class="form-control"
+            name="disposability"
+            id="field_disposability"
+            data-cy="disposability"
+            formControlName="disposability"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_capacite" jhiTranslate="projectinternApp.service.capacite">Capacite</label>
+          <input type="number" class="form-control" name="capacite" id="field_capacite" data-cy="capacite" formControlName="capacite" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_typeService" jhiTranslate="projectinternApp.service.typeService">Type Service</label>
+          <input
+            type="text"
+            class="form-control"
+            name="typeService"
+            id="field_typeService"
+            data-cy="typeService"
+            formControlName="typeService"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_hotel" jhiTranslate="projectinternApp.service.hotel">Hotel</label>
+          <select class="form-control" id="field_hotel" data-cy="hotel" name="hotel" formControlName="hotel" [compareWith]="compareHotel">
+            <option [ngValue]="null"></option>
+            @for (hotelOption of hotelsSharedCollection; track $index) {
+              <option [ngValue]="hotelOption">{{ hotelOption.id }}</option>
+            }
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_partenaire" jhiTranslate="projectinternApp.service.partenaire">Partenaire</label>
+          <select
+            class="form-control"
+            id="field_partenaire"
+            data-cy="partenaire"
+            name="partenaire"
+            formControlName="partenaire"
+            [compareWith]="comparePartenaire"
+          >
+            <option [ngValue]="null"></option>
+            @for (partenaireOption of partenairesSharedCollection; track $index) {
+              <option [ngValue]="partenaireOption">{{ partenaireOption.id }}</option>
+            }
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_reservation" jhiTranslate="projectinternApp.service.reservation">Reservation</label>
+          <select
+            class="form-control"
+            id="field_reservation"
+            data-cy="reservation"
+            name="reservation"
+            formControlName="reservation"
+            [compareWith]="compareReservation"
+          >
+            <option [ngValue]="null"></option>
+            @for (reservationOption of reservationsSharedCollection; track $index) {
+              <option [ngValue]="reservationOption">{{ reservationOption.id }}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

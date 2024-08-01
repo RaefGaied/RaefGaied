@@ -1,0 +1,10 @@
+{
+  "projectinternApp": {
+    "Statut": {
+      "null": "",
+      "CONFIRME": "CONFIRME",
+      "EN_COURS": "EN_COURS",
+      "ANNULE": "ANNULE"
+    }
+  }
+}

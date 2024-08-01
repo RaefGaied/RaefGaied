@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (paiement()) {
+      <div>
+        <h2 data-cy="paiementDetailsHeading"><span jhiTranslate="projectinternApp.paiement.detail.title">Paiement</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ paiement()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.paiement.montant">Montant</span></dt>
+          <dd>
+            <span>{{ paiement()!.montant }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.paiement.datePaiement">Date Paiement</span></dt>
+          <dd>
+            <span>{{ paiement()!.datePaiement | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.paiement.methodePaiement">Methode Paiement</span></dt>
+          <dd>
+            <span>{{ paiement()!.methodePaiement }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.paiement.token">Token</span></dt>
+          <dd>
+            <span>{{ paiement()!.token }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.paiement.description">Description</span></dt>
+          <dd>
+            <span>{{ paiement()!.description }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/paiement', paiement()!.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,104 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-ui-configuration-heading"
+        data-cy="UIConfigurationCreateUpdateHeading"
+        jhiTranslate="projectinternApp.uIConfiguration.home.createOrEditLabel"
+      >
+        Create or edit a UI Configuration
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        @if (editForm.controls.id.value !== null) {
+          <div class="mb-3">
+            <label class="form-label" for="field_id" jhiTranslate="projectinternApp.uIConfiguration.id">ID</label>
+            <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+          </div>
+        }
+
+        <div class="mb-3">
+          <label class="form-label" for="field_colorSchema" jhiTranslate="projectinternApp.uIConfiguration.colorSchema">Color Schema</label>
+          <input
+            type="text"
+            class="form-control"
+            name="colorSchema"
+            id="field_colorSchema"
+            data-cy="colorSchema"
+            formControlName="colorSchema"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_logo" jhiTranslate="projectinternApp.uIConfiguration.logo">Logo</label>
+          <input type="text" class="form-control" name="logo" id="field_logo" data-cy="logo" formControlName="logo" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_banner" jhiTranslate="projectinternApp.uIConfiguration.banner">Banner</label>
+          <input type="text" class="form-control" name="banner" id="field_banner" data-cy="banner" formControlName="banner" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_dateCreation" jhiTranslate="projectinternApp.uIConfiguration.dateCreation"
+            >Date Creation</label
+          >
+          <div class="d-flex">
+            <input
+              id="field_dateCreation"
+              data-cy="dateCreation"
+              type="datetime-local"
+              class="form-control"
+              name="dateCreation"
+              formControlName="dateCreation"
+              placeholder="YYYY-MM-DD HH:mm"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_dateModify" jhiTranslate="projectinternApp.uIConfiguration.dateModify">Date Modify</label>
+          <div class="d-flex">
+            <input
+              id="field_dateModify"
+              data-cy="dateModify"
+              type="datetime-local"
+              class="form-control"
+              name="dateModify"
+              formControlName="dateModify"
+              placeholder="YYYY-MM-DD HH:mm"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_hotel" jhiTranslate="projectinternApp.uIConfiguration.hotel">Hotel</label>
+          <select class="form-control" id="field_hotel" data-cy="hotel" name="hotel" formControlName="hotel" [compareWith]="compareHotel">
+            <option [ngValue]="null"></option>
+            @for (hotelOption of hotelsSharedCollection; track $index) {
+              <option [ngValue]="hotelOption">{{ hotelOption.id }}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

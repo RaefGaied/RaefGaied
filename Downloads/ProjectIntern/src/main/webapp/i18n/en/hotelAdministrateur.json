@@ -1,0 +1,27 @@
+{
+  "projectinternApp": {
+    "hotelAdministrateur": {
+      "home": {
+        "title": "Hotel Administrateurs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Hotel Administrateur",
+        "createOrEditLabel": "Create or edit a Hotel Administrateur",
+        "notFound": "No Hotel Administrateurs found"
+      },
+      "created": "A new Hotel Administrateur is created with identifier {{ param }}",
+      "updated": "A Hotel Administrateur is updated with identifier {{ param }}",
+      "deleted": "A Hotel Administrateur is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Hotel Administrateur {{ id }}?"
+      },
+      "detail": {
+        "title": "Hotel Administrateur"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "email": "Email",
+      "motDePasse": "Mot De Passe",
+      "hotels": "Hotels"
+    }
+  }
+}

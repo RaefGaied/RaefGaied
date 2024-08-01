@@ -1,0 +1,107 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-hotel-heading" data-cy="HotelCreateUpdateHeading" jhiTranslate="projectinternApp.hotel.home.createOrEditLabel">
+        Create or edit a Hotel
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        @if (editForm.controls.id.value !== null) {
+          <div class="mb-3">
+            <label class="form-label" for="field_id" jhiTranslate="projectinternApp.hotel.id">ID</label>
+            <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+          </div>
+        }
+
+        <div class="mb-3">
+          <label class="form-label" for="field_nom" jhiTranslate="projectinternApp.hotel.nom">Nom</label>
+          <input type="text" class="form-control" name="nom" id="field_nom" data-cy="nom" formControlName="nom" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_address" jhiTranslate="projectinternApp.hotel.address">Address</label>
+          <input type="text" class="form-control" name="address" id="field_address" data-cy="address" formControlName="address" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_numTel" jhiTranslate="projectinternApp.hotel.numTel">Num Tel</label>
+          <input type="text" class="form-control" name="numTel" id="field_numTel" data-cy="numTel" formControlName="numTel" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_pays" jhiTranslate="projectinternApp.hotel.pays">Pays</label>
+          <input type="text" class="form-control" name="pays" id="field_pays" data-cy="pays" formControlName="pays" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_ville" jhiTranslate="projectinternApp.hotel.ville">Ville</label>
+          <input type="text" class="form-control" name="ville" id="field_ville" data-cy="ville" formControlName="ville" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_vueS" jhiTranslate="projectinternApp.hotel.vueS">Vue S</label>
+          <input type="text" class="form-control" name="vueS" id="field_vueS" data-cy="vueS" formControlName="vueS" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_capacity" jhiTranslate="projectinternApp.hotel.capacity">Capacity</label>
+          <input type="number" class="form-control" name="capacity" id="field_capacity" data-cy="capacity" formControlName="capacity" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_notation" jhiTranslate="projectinternApp.hotel.notation">Notation</label>
+          <input type="text" class="form-control" name="notation" id="field_notation" data-cy="notation" formControlName="notation" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_lienUnique" jhiTranslate="projectinternApp.hotel.lienUnique">Lien Unique</label>
+          <input
+            type="text"
+            class="form-control"
+            name="lienUnique"
+            id="field_lienUnique"
+            data-cy="lienUnique"
+            formControlName="lienUnique"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_hotelAdministrateur" jhiTranslate="projectinternApp.hotel.hotelAdministrateur"
+            >Hotel Administrateur</label
+          >
+          <select
+            class="form-control"
+            id="field_hotelAdministrateur"
+            data-cy="hotelAdministrateur"
+            name="hotelAdministrateur"
+            formControlName="hotelAdministrateur"
+            [compareWith]="compareHotelAdministrateur"
+          >
+            <option [ngValue]="null"></option>
+            @for (hotelAdministrateurOption of hotelAdministrateursSharedCollection; track $index) {
+              <option [ngValue]="hotelAdministrateurOption">{{ hotelAdministrateurOption.id }}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

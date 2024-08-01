@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (reservation()) {
+      <div>
+        <h2 data-cy="reservationDetailsHeading"><span jhiTranslate="projectinternApp.reservation.detail.title">Reservation</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ reservation()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.reservation.dateDebut">Date Debut</span></dt>
+          <dd>
+            <span>{{ reservation()!.dateDebut | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.reservation.dateFin">Date Fin</span></dt>
+          <dd>
+            <span>{{ reservation()!.dateFin | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.reservation.totalPrix">Total Prix</span></dt>
+          <dd>
+            <span>{{ reservation()!.totalPrix }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.reservation.statutPaiement">Statut Paiement</span></dt>
+          <dd>
+            <span [jhiTranslate]="'projectinternApp.Statut.' + (reservation()!.statutPaiement ?? 'null')">{{
+              { null: '', CONFIRME: 'CONFIRME', EN_COURS: 'EN_COURS', ANNULE: 'ANNULE' }[reservation()!.statutPaiement ?? 'null']
+            }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.reservation.hotel">Hotel</span></dt>
+          <dd>
+            @if (reservation()!.hotel) {
+              <div>
+                <a [routerLink]="['/hotel', reservation()!.hotel?.id, 'view']">{{ reservation()!.hotel?.id }}</a>
+              </div>
+            }
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.reservation.user">User</span></dt>
+          <dd>
+            <span>{{ reservation()!.user?.id }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/reservation', reservation()!.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

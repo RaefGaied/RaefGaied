@@ -1,0 +1,115 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-email-template-configuration-heading"
+        data-cy="EmailTemplateConfigurationCreateUpdateHeading"
+        jhiTranslate="projectinternApp.emailTemplateConfiguration.home.createOrEditLabel"
+      >
+        Create or edit a Email Template Configuration
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        @if (editForm.controls.id.value !== null) {
+          <div class="mb-3">
+            <label class="form-label" for="field_id" jhiTranslate="projectinternApp.emailTemplateConfiguration.id">ID</label>
+            <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+          </div>
+        }
+
+        <div class="mb-3">
+          <label class="form-label" for="field_nomTemplate" jhiTranslate="projectinternApp.emailTemplateConfiguration.nomTemplate"
+            >Nom Template</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="nomTemplate"
+            id="field_nomTemplate"
+            data-cy="nomTemplate"
+            formControlName="nomTemplate"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_corps" jhiTranslate="projectinternApp.emailTemplateConfiguration.corps">Corps</label>
+          <input type="text" class="form-control" name="corps" id="field_corps" data-cy="corps" formControlName="corps" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_dateCreation" jhiTranslate="projectinternApp.emailTemplateConfiguration.dateCreation"
+            >Date Creation</label
+          >
+          <div class="d-flex">
+            <input
+              id="field_dateCreation"
+              data-cy="dateCreation"
+              type="datetime-local"
+              class="form-control"
+              name="dateCreation"
+              formControlName="dateCreation"
+              placeholder="YYYY-MM-DD HH:mm"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_dateModify" jhiTranslate="projectinternApp.emailTemplateConfiguration.dateModify"
+            >Date Modify</label
+          >
+          <div class="d-flex">
+            <input
+              id="field_dateModify"
+              data-cy="dateModify"
+              type="datetime-local"
+              class="form-control"
+              name="dateModify"
+              formControlName="dateModify"
+              placeholder="YYYY-MM-DD HH:mm"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_activeStatus" jhiTranslate="projectinternApp.emailTemplateConfiguration.activeStatus"
+            >Active Status</label
+          >
+          <select class="form-control" name="activeStatus" formControlName="activeStatus" id="field_activeStatus" data-cy="activeStatus">
+            <option [ngValue]="null">{{ 'projectinternApp.Act.null' | translate }}</option>
+            @for (act of actValues; track $index) {
+              <option [value]="act">{{ 'projectinternApp.Act.' + act | translate }}</option>
+            }
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_hotel" jhiTranslate="projectinternApp.emailTemplateConfiguration.hotel">Hotel</label>
+          <select class="form-control" id="field_hotel" data-cy="hotel" name="hotel" formControlName="hotel" [compareWith]="compareHotel">
+            <option [ngValue]="null"></option>
+            @for (hotelOption of hotelsSharedCollection; track $index) {
+              <option [ngValue]="hotelOption">{{ hotelOption.id }}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+{
+  "annotations": {
+    "changelogDate": "20240801123915"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "address",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numTel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pays",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ville",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vueS",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "capacity",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "notation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lienUnique",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Hotel",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "service",
+      "relationshipName": "services",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "uIConfiguration",
+      "relationshipName": "uiConfigurations",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "emailTemplateConfiguration",
+      "relationshipName": "emailConfig",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "authentificationConfiguration",
+      "relationshipName": "authConfig",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

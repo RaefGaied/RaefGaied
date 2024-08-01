@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20240801123916"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "ui_configuration",
+  "fields": [
+    {
+      "fieldName": "colorSchema",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "banner",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateCreation",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "dateModify",
+      "fieldType": "ZonedDateTime"
+    }
+  ],
+  "name": "UIConfiguration",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

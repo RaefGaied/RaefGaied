@@ -1,0 +1,29 @@
+{
+  "projectinternApp": {
+    "uIConfiguration": {
+      "home": {
+        "title": "UI Configurations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new UI Configuration",
+        "createOrEditLabel": "Create or edit a UI Configuration",
+        "notFound": "No UI Configurations found"
+      },
+      "created": "A new UI Configuration is created with identifier {{ param }}",
+      "updated": "A UI Configuration is updated with identifier {{ param }}",
+      "deleted": "A UI Configuration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete UI Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "UI Configuration"
+      },
+      "id": "ID",
+      "colorSchema": "Color Schema",
+      "logo": "Logo",
+      "banner": "Banner",
+      "dateCreation": "Date Creation",
+      "dateModify": "Date Modify",
+      "hotel": "Hotel"
+    }
+  }
+}

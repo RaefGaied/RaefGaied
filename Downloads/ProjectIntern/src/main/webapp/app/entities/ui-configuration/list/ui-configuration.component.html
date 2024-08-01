@@ -1,0 +1,139 @@
+<div>
+  <h2 id="page-heading" data-cy="UIConfigurationHeading">
+    <span jhiTranslate="projectinternApp.uIConfiguration.home.title">UI Configurations</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [animation]="isLoading ? 'spin' : undefined"></fa-icon>
+        <span jhiTranslate="projectinternApp.uIConfiguration.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-ui-configuration"
+        [routerLink]="['/ui-configuration/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="projectinternApp.uIConfiguration.home.createLabel">Create a new UI Configuration</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  @if (uIConfigurations?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="projectinternApp.uIConfiguration.home.notFound">No UI Configurations found</span>
+    </div>
+  }
+
+  @if (uIConfigurations && uIConfigurations.length > 0) {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [sortState]="sortState" (sortChange)="navigateToWithComponentValues($event)">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="colorSchema">
+              <div class="d-flex">
+                <span jhiTranslate="projectinternApp.uIConfiguration.colorSchema">Color Schema</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="logo">
+              <div class="d-flex">
+                <span jhiTranslate="projectinternApp.uIConfiguration.logo">Logo</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="banner">
+              <div class="d-flex">
+                <span jhiTranslate="projectinternApp.uIConfiguration.banner">Banner</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="dateCreation">
+              <div class="d-flex">
+                <span jhiTranslate="projectinternApp.uIConfiguration.dateCreation">Date Creation</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="dateModify">
+              <div class="d-flex">
+                <span jhiTranslate="projectinternApp.uIConfiguration.dateModify">Date Modify</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="hotel.id">
+              <div class="d-flex">
+                <span jhiTranslate="projectinternApp.uIConfiguration.hotel">Hotel</span>
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody infinite-scroll (scrolled)="loadNextPage()" [infiniteScrollDisabled]="!hasMorePage()" [infiniteScrollDistance]="0">
+          @for (uIConfiguration of uIConfigurations; track trackId) {
+            <tr data-cy="entityTable">
+              <td>
+                <a [routerLink]="['/ui-configuration', uIConfiguration.id, 'view']">{{ uIConfiguration.id }}</a>
+              </td>
+              <td>{{ uIConfiguration.colorSchema }}</td>
+              <td>{{ uIConfiguration.logo }}</td>
+              <td>{{ uIConfiguration.banner }}</td>
+              <td>{{ uIConfiguration.dateCreation | formatMediumDatetime }}</td>
+              <td>{{ uIConfiguration.dateModify | formatMediumDatetime }}</td>
+              <td>
+                @if (uIConfiguration.hotel) {
+                  <div>
+                    <a [routerLink]="['/hotel', uIConfiguration.hotel.id, 'view']">{{ uIConfiguration.hotel.id }}</a>
+                  </div>
+                }
+              </td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <a
+                    [routerLink]="['/ui-configuration', uIConfiguration.id, 'view']"
+                    class="btn btn-info btn-sm"
+                    data-cy="entityDetailsButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                  </a>
+
+                  <a
+                    [routerLink]="['/ui-configuration', uIConfiguration.id, 'edit']"
+                    class="btn btn-primary btn-sm"
+                    data-cy="entityEditButton"
+                  >
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                  </a>
+
+                  <button type="submit" (click)="delete(uIConfiguration)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

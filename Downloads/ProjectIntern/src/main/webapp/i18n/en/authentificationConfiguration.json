@@ -1,0 +1,26 @@
+{
+  "projectinternApp": {
+    "authentificationConfiguration": {
+      "home": {
+        "title": "Authentification Configurations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Authentification Configuration",
+        "createOrEditLabel": "Create or edit a Authentification Configuration",
+        "notFound": "No Authentification Configurations found"
+      },
+      "created": "A new Authentification Configuration is created with identifier {{ param }}",
+      "updated": "A Authentification Configuration is updated with identifier {{ param }}",
+      "deleted": "A Authentification Configuration is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Authentification Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "Authentification Configuration"
+      },
+      "id": "ID",
+      "twoFactorEnabled": "Two Factor Enabled",
+      "loginPageCustomization": "Login Page Customization",
+      "hotel": "Hotel"
+    }
+  }
+}

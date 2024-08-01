@@ -1,0 +1,41 @@
+{
+  "annotations": {
+    "changelogDate": "20240801123920"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contact",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typePartenaire",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Partenaire",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "service",
+      "relationshipName": "services",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

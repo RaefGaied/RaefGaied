@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (uIConfiguration()) {
+      <div>
+        <h2 data-cy="uIConfigurationDetailsHeading">
+          <span jhiTranslate="projectinternApp.uIConfiguration.detail.title">UI Configuration</span>
+        </h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ uIConfiguration()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.uIConfiguration.colorSchema">Color Schema</span></dt>
+          <dd>
+            <span>{{ uIConfiguration()!.colorSchema }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.uIConfiguration.logo">Logo</span></dt>
+          <dd>
+            <span>{{ uIConfiguration()!.logo }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.uIConfiguration.banner">Banner</span></dt>
+          <dd>
+            <span>{{ uIConfiguration()!.banner }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.uIConfiguration.dateCreation">Date Creation</span></dt>
+          <dd>
+            <span>{{ uIConfiguration()!.dateCreation | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.uIConfiguration.dateModify">Date Modify</span></dt>
+          <dd>
+            <span>{{ uIConfiguration()!.dateModify | formatMediumDatetime }}</span>
+          </dd>
+          <dt><span jhiTranslate="projectinternApp.uIConfiguration.hotel">Hotel</span></dt>
+          <dd>
+            @if (uIConfiguration()!.hotel) {
+              <div>
+                <a [routerLink]="['/hotel', uIConfiguration()!.hotel?.id, 'view']">{{ uIConfiguration()!.hotel?.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/ui-configuration', uIConfiguration()!.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

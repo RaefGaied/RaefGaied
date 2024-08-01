@@ -1,0 +1,22 @@
+{
+  "annotations": {
+    "changelogDate": "20240801123918"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "twoFactorEnabled",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "loginPageCustomization",
+      "fieldType": "String"
+    }
+  ],
+  "name": "AuthentificationConfiguration",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
