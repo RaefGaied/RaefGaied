@@ -1,0 +1,50 @@
+{
+  "annotations": {
+    "changelogDate": "20240801111759"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "dateFin",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "totalPrix",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "statutPaiement",
+      "fieldType": "Statut",
+      "fieldValues": "CONFIRME,EN_COURS,ANNULE"
+    }
+  ],
+  "name": "Reservation",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "service",
+      "relationshipName": "service",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "hotel",
+      "relationshipName": "hotel",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

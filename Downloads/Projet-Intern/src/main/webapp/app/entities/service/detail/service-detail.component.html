@@ -1,0 +1,78 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (service()) {
+      <div>
+        <h2 data-cy="serviceDetailsHeading"><span jhiTranslate="projetinternApp.service.detail.title">Service</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ service()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.nom">Nom</span></dt>
+          <dd>
+            <span>{{ service()!.nom }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.description">Description</span></dt>
+          <dd>
+            <span>{{ service()!.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.prix">Prix</span></dt>
+          <dd>
+            <span>{{ service()!.prix }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.disposability">Disposability</span></dt>
+          <dd>
+            <span>{{ service()!.disposability }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.capacite">Capacite</span></dt>
+          <dd>
+            <span>{{ service()!.capacite }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.typeService">Type Service</span></dt>
+          <dd>
+            <span>{{ service()!.typeService }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.hotel">Hotel</span></dt>
+          <dd>
+            @if (service()!.hotel) {
+              <div>
+                <a [routerLink]="['/hotel', service()!.hotel?.id, 'view']">{{ service()!.hotel?.id }}</a>
+              </div>
+            }
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.partenaire">Partenaire</span></dt>
+          <dd>
+            @if (service()!.partenaire) {
+              <div>
+                <a [routerLink]="['/partenaire', service()!.partenaire?.id, 'view']">{{ service()!.partenaire?.id }}</a>
+              </div>
+            }
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.service.reservation">Reservation</span></dt>
+          <dd>
+            @if (service()!.reservation) {
+              <div>
+                <a [routerLink]="['/reservation', service()!.reservation?.id, 'view']">{{ service()!.reservation?.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/service', service()!.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

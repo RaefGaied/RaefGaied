@@ -1,0 +1,33 @@
+{
+  "annotations": {
+    "changelogDate": "20240801111752"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motDePasse",
+      "fieldType": "String"
+    }
+  ],
+  "name": "HotelAdministrateur",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "hotel",
+      "relationshipName": "hotels",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

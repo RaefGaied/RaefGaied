@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240801111757"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prix",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "disposability",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "capacite",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "typeService",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Service",
+  "pagination": "infinite-scroll",
+  "relationships": [
+    {
+      "otherEntityName": "partenaire",
+      "relationshipName": "partenaire",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

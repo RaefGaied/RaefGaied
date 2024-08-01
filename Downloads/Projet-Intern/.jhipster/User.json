@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20240801111800"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motDePasse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numTelephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresse",
+      "fieldType": "String"
+    }
+  ],
+  "name": "User",
+  "pagination": "infinite-scroll",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

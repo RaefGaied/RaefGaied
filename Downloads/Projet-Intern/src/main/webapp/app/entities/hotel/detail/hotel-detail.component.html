@@ -1,0 +1,76 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (hotel()) {
+      <div>
+        <h2 data-cy="hotelDetailsHeading"><span jhiTranslate="projetinternApp.hotel.detail.title">Hotel</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ hotel()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.nom">Nom</span></dt>
+          <dd>
+            <span>{{ hotel()!.nom }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.address">Address</span></dt>
+          <dd>
+            <span>{{ hotel()!.address }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.numTel">Num Tel</span></dt>
+          <dd>
+            <span>{{ hotel()!.numTel }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.pays">Pays</span></dt>
+          <dd>
+            <span>{{ hotel()!.pays }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.ville">Ville</span></dt>
+          <dd>
+            <span>{{ hotel()!.ville }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.vueS">Vue S</span></dt>
+          <dd>
+            <span>{{ hotel()!.vueS }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.capacity">Capacity</span></dt>
+          <dd>
+            <span>{{ hotel()!.capacity }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.notation">Notation</span></dt>
+          <dd>
+            <span>{{ hotel()!.notation }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.lienUnique">Lien Unique</span></dt>
+          <dd>
+            <span>{{ hotel()!.lienUnique }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.hotel.hotelAdministrateur">Hotel Administrateur</span></dt>
+          <dd>
+            @if (hotel()!.hotelAdministrateur) {
+              <div>
+                <a [routerLink]="['/hotel-administrateur', hotel()!.hotelAdministrateur?.id, 'view']">{{
+                  hotel()!.hotelAdministrateur?.id
+                }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/hotel', hotel()!.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

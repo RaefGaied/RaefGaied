@@ -1,0 +1,54 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (authentificationConfiguration()) {
+      <div>
+        <h2 data-cy="authentificationConfigurationDetailsHeading">
+          <span jhiTranslate="projetinternApp.authentificationConfiguration.detail.title">Authentification Configuration</span>
+        </h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ authentificationConfiguration()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.authentificationConfiguration.twoFactorEnabled">Two Factor Enabled</span></dt>
+          <dd>
+            <span>{{ authentificationConfiguration()!.twoFactorEnabled }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.authentificationConfiguration.loginPageCustomization">Login Page Customization</span></dt>
+          <dd>
+            <span>{{ authentificationConfiguration()!.loginPageCustomization }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.authentificationConfiguration.hotel">Hotel</span></dt>
+          <dd>
+            @if (authentificationConfiguration()!.hotel) {
+              <div>
+                <a [routerLink]="['/hotel', authentificationConfiguration()!.hotel?.id, 'view']">{{
+                  authentificationConfiguration()!.hotel?.id
+                }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button
+          type="button"
+          [routerLink]="['/authentification-configuration', authentificationConfiguration()!.id, 'edit']"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

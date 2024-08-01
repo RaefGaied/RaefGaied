@@ -1,0 +1,30 @@
+{
+  "projetinternApp": {
+    "partenaire": {
+      "home": {
+        "title": "Partenaires",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Partenaire",
+        "createOrEditLabel": "Create or edit a Partenaire",
+        "notFound": "No Partenaires found"
+      },
+      "created": "A new Partenaire is created with identifier {{ param }}",
+      "updated": "A Partenaire is updated with identifier {{ param }}",
+      "deleted": "A Partenaire is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Partenaire {{ id }}?"
+      },
+      "detail": {
+        "title": "Partenaire"
+      },
+      "id": "ID",
+      "description": "Description",
+      "nom": "Nom",
+      "contact": "Contact",
+      "adresse": "Adresse",
+      "typePartenaire": "Type Partenaire",
+      "services": "Services",
+      "service": "Service"
+    }
+  }
+}

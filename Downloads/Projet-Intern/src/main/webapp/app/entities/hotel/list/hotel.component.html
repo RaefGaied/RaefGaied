@@ -1,0 +1,163 @@
+<div>
+  <h2 id="page-heading" data-cy="HotelHeading">
+    <span jhiTranslate="projetinternApp.hotel.home.title">Hotels</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [animation]="isLoading ? 'spin' : undefined"></fa-icon>
+        <span jhiTranslate="projetinternApp.hotel.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-hotel"
+        [routerLink]="['/hotel/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="projetinternApp.hotel.home.createLabel">Create a new Hotel</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  @if (hotels?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="projetinternApp.hotel.home.notFound">No Hotels found</span>
+    </div>
+  }
+
+  @if (hotels && hotels.length > 0) {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [sortState]="sortState" (sortChange)="navigateToWithComponentValues($event)">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="nom">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.nom">Nom</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="address">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.address">Address</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="numTel">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.numTel">Num Tel</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="pays">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.pays">Pays</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="ville">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.ville">Ville</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="vueS">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.vueS">Vue S</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="capacity">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.capacity">Capacity</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="notation">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.notation">Notation</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="lienUnique">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.lienUnique">Lien Unique</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="hotelAdministrateur.id">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.hotel.hotelAdministrateur">Hotel Administrateur</span>
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody infinite-scroll (scrolled)="loadNextPage()" [infiniteScrollDisabled]="!hasMorePage()" [infiniteScrollDistance]="0">
+          @for (hotel of hotels; track trackId) {
+            <tr data-cy="entityTable">
+              <td>
+                <a [routerLink]="['/hotel', hotel.id, 'view']">{{ hotel.id }}</a>
+              </td>
+              <td>{{ hotel.nom }}</td>
+              <td>{{ hotel.address }}</td>
+              <td>{{ hotel.numTel }}</td>
+              <td>{{ hotel.pays }}</td>
+              <td>{{ hotel.ville }}</td>
+              <td>{{ hotel.vueS }}</td>
+              <td>{{ hotel.capacity }}</td>
+              <td>{{ hotel.notation }}</td>
+              <td>{{ hotel.lienUnique }}</td>
+              <td>
+                @if (hotel.hotelAdministrateur) {
+                  <div>
+                    <a [routerLink]="['/hotel-administrateur', hotel.hotelAdministrateur.id, 'view']">{{ hotel.hotelAdministrateur.id }}</a>
+                  </div>
+                }
+              </td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <a [routerLink]="['/hotel', hotel.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                  </a>
+
+                  <a [routerLink]="['/hotel', hotel.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                  </a>
+
+                  <button type="submit" (click)="delete(hotel)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

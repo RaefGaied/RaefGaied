@@ -1,0 +1,126 @@
+<div>
+  <h2 id="page-heading" data-cy="AuthentificationConfigurationHeading">
+    <span jhiTranslate="projetinternApp.authentificationConfiguration.home.title">Authentification Configurations</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [animation]="isLoading ? 'spin' : undefined"></fa-icon>
+        <span jhiTranslate="projetinternApp.authentificationConfiguration.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-authentification-configuration"
+        [routerLink]="['/authentification-configuration/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="projetinternApp.authentificationConfiguration.home.createLabel"
+          >Create a new Authentification Configuration</span
+        >
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  @if (authentificationConfigurations?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="projetinternApp.authentificationConfiguration.home.notFound">No Authentification Configurations found</span>
+    </div>
+  }
+
+  @if (authentificationConfigurations && authentificationConfigurations.length > 0) {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [sortState]="sortState" (sortChange)="navigateToWithComponentValues($event)">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="twoFactorEnabled">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.authentificationConfiguration.twoFactorEnabled">Two Factor Enabled</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="loginPageCustomization">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.authentificationConfiguration.loginPageCustomization">Login Page Customization</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="hotel.id">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.authentificationConfiguration.hotel">Hotel</span>
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody infinite-scroll (scrolled)="loadNextPage()" [infiniteScrollDisabled]="!hasMorePage()" [infiniteScrollDistance]="0">
+          @for (authentificationConfiguration of authentificationConfigurations; track trackId) {
+            <tr data-cy="entityTable">
+              <td>
+                <a [routerLink]="['/authentification-configuration', authentificationConfiguration.id, 'view']">{{
+                  authentificationConfiguration.id
+                }}</a>
+              </td>
+              <td>{{ authentificationConfiguration.twoFactorEnabled }}</td>
+              <td>{{ authentificationConfiguration.loginPageCustomization }}</td>
+              <td>
+                @if (authentificationConfiguration.hotel) {
+                  <div>
+                    <a [routerLink]="['/hotel', authentificationConfiguration.hotel.id, 'view']">{{
+                      authentificationConfiguration.hotel.id
+                    }}</a>
+                  </div>
+                }
+              </td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <a
+                    [routerLink]="['/authentification-configuration', authentificationConfiguration.id, 'view']"
+                    class="btn btn-info btn-sm"
+                    data-cy="entityDetailsButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                  </a>
+
+                  <a
+                    [routerLink]="['/authentification-configuration', authentificationConfiguration.id, 'edit']"
+                    class="btn btn-primary btn-sm"
+                    data-cy="entityEditButton"
+                  >
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                  </a>
+
+                  <button
+                    type="submit"
+                    (click)="delete(authentificationConfiguration)"
+                    class="btn btn-danger btn-sm"
+                    data-cy="entityDeleteButton"
+                  >
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

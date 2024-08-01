@@ -1,0 +1,98 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-partenaire-heading"
+        data-cy="PartenaireCreateUpdateHeading"
+        jhiTranslate="projetinternApp.partenaire.home.createOrEditLabel"
+      >
+        Create or edit a Partenaire
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        @if (editForm.controls.id.value !== null) {
+          <div class="mb-3">
+            <label class="form-label" for="field_id" jhiTranslate="projetinternApp.partenaire.id">ID</label>
+            <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+          </div>
+        }
+
+        <div class="mb-3">
+          <label class="form-label" for="field_description" jhiTranslate="projetinternApp.partenaire.description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            name="description"
+            id="field_description"
+            data-cy="description"
+            formControlName="description"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_nom" jhiTranslate="projetinternApp.partenaire.nom">Nom</label>
+          <input type="text" class="form-control" name="nom" id="field_nom" data-cy="nom" formControlName="nom" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_contact" jhiTranslate="projetinternApp.partenaire.contact">Contact</label>
+          <input type="text" class="form-control" name="contact" id="field_contact" data-cy="contact" formControlName="contact" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_adresse" jhiTranslate="projetinternApp.partenaire.adresse">Adresse</label>
+          <input type="text" class="form-control" name="adresse" id="field_adresse" data-cy="adresse" formControlName="adresse" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_typePartenaire" jhiTranslate="projetinternApp.partenaire.typePartenaire"
+            >Type Partenaire</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="typePartenaire"
+            id="field_typePartenaire"
+            data-cy="typePartenaire"
+            formControlName="typePartenaire"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="field_service" jhiTranslate="projetinternApp.partenaire.service">Service</label>
+          <select
+            class="form-control"
+            id="field_service"
+            data-cy="service"
+            name="service"
+            formControlName="service"
+            [compareWith]="compareService"
+          >
+            <option [ngValue]="null"></option>
+            @for (serviceOption of servicesSharedCollection; track $index) {
+              <option [ngValue]="serviceOption">{{ serviceOption.id }}</option>
+            }
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

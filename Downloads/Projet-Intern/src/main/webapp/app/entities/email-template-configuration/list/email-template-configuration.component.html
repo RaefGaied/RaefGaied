@@ -1,0 +1,148 @@
+<div>
+  <h2 id="page-heading" data-cy="EmailTemplateConfigurationHeading">
+    <span jhiTranslate="projetinternApp.emailTemplateConfiguration.home.title">Email Template Configurations</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [animation]="isLoading ? 'spin' : undefined"></fa-icon>
+        <span jhiTranslate="projetinternApp.emailTemplateConfiguration.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-email-template-configuration"
+        [routerLink]="['/email-template-configuration/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="projetinternApp.emailTemplateConfiguration.home.createLabel">Create a new Email Template Configuration</span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  @if (emailTemplateConfigurations?.length === 0) {
+    <div class="alert alert-warning" id="no-result">
+      <span jhiTranslate="projetinternApp.emailTemplateConfiguration.home.notFound">No Email Template Configurations found</span>
+    </div>
+  }
+
+  @if (emailTemplateConfigurations && emailTemplateConfigurations.length > 0) {
+    <div class="table-responsive table-entities" id="entities">
+      <table class="table table-striped" aria-describedby="page-heading">
+        <thead>
+          <tr jhiSort [sortState]="sortState" (sortChange)="navigateToWithComponentValues($event)">
+            <th scope="col" jhiSortBy="id">
+              <div class="d-flex">
+                <span jhiTranslate="global.field.id">ID</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="nomTemplate">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.emailTemplateConfiguration.nomTemplate">Nom Template</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="corps">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.emailTemplateConfiguration.corps">Corps</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="dateCreation">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.emailTemplateConfiguration.dateCreation">Date Creation</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="dateModify">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.emailTemplateConfiguration.dateModify">Date Modify</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="activeStatus">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.emailTemplateConfiguration.activeStatus">Active Status</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col" jhiSortBy="hotel.id">
+              <div class="d-flex">
+                <span jhiTranslate="projetinternApp.emailTemplateConfiguration.hotel">Hotel</span>
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody infinite-scroll (scrolled)="loadNextPage()" [infiniteScrollDisabled]="!hasMorePage()" [infiniteScrollDistance]="0">
+          @for (emailTemplateConfiguration of emailTemplateConfigurations; track trackId) {
+            <tr data-cy="entityTable">
+              <td>
+                <a [routerLink]="['/email-template-configuration', emailTemplateConfiguration.id, 'view']">{{
+                  emailTemplateConfiguration.id
+                }}</a>
+              </td>
+              <td>{{ emailTemplateConfiguration.nomTemplate }}</td>
+              <td>{{ emailTemplateConfiguration.corps }}</td>
+              <td>{{ emailTemplateConfiguration.dateCreation | formatMediumDatetime }}</td>
+              <td>{{ emailTemplateConfiguration.dateModify | formatMediumDatetime }}</td>
+              <td [jhiTranslate]="'projetinternApp.Act.' + (emailTemplateConfiguration.activeStatus ?? 'null')">
+                {{ { null: '', AVAILABLE: 'AVAILABLE', OFFLINE: 'OFFLINE' }[emailTemplateConfiguration.activeStatus ?? 'null'] }}
+              </td>
+              <td>
+                @if (emailTemplateConfiguration.hotel) {
+                  <div>
+                    <a [routerLink]="['/hotel', emailTemplateConfiguration.hotel.id, 'view']">{{ emailTemplateConfiguration.hotel.id }}</a>
+                  </div>
+                }
+              </td>
+              <td class="text-end">
+                <div class="btn-group">
+                  <a
+                    [routerLink]="['/email-template-configuration', emailTemplateConfiguration.id, 'view']"
+                    class="btn btn-info btn-sm"
+                    data-cy="entityDetailsButton"
+                  >
+                    <fa-icon icon="eye"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                  </a>
+
+                  <a
+                    [routerLink]="['/email-template-configuration', emailTemplateConfiguration.id, 'edit']"
+                    class="btn btn-primary btn-sm"
+                    data-cy="entityEditButton"
+                  >
+                    <fa-icon icon="pencil-alt"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                  </a>
+
+                  <button
+                    type="submit"
+                    (click)="delete(emailTemplateConfiguration)"
+                    class="btn btn-danger btn-sm"
+                    data-cy="entityDeleteButton"
+                  >
+                    <fa-icon icon="times"></fa-icon>
+                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>

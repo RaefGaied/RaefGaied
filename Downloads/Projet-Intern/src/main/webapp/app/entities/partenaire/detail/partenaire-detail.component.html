@@ -1,0 +1,58 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (partenaire()) {
+      <div>
+        <h2 data-cy="partenaireDetailsHeading"><span jhiTranslate="projetinternApp.partenaire.detail.title">Partenaire</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">ID</span></dt>
+          <dd>
+            <span>{{ partenaire()!.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.partenaire.description">Description</span></dt>
+          <dd>
+            <span>{{ partenaire()!.description }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.partenaire.nom">Nom</span></dt>
+          <dd>
+            <span>{{ partenaire()!.nom }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.partenaire.contact">Contact</span></dt>
+          <dd>
+            <span>{{ partenaire()!.contact }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.partenaire.adresse">Adresse</span></dt>
+          <dd>
+            <span>{{ partenaire()!.adresse }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.partenaire.typePartenaire">Type Partenaire</span></dt>
+          <dd>
+            <span>{{ partenaire()!.typePartenaire }}</span>
+          </dd>
+          <dt><span jhiTranslate="projetinternApp.partenaire.service">Service</span></dt>
+          <dd>
+            @if (partenaire()!.service) {
+              <div>
+                <a [routerLink]="['/service', partenaire()!.service?.id, 'view']">{{ partenaire()!.service?.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/partenaire', partenaire()!.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

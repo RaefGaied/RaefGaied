@@ -1,0 +1,113 @@
+
+entity HotelAdministrateur {
+    nom String,
+    email String,
+    motDePasse String
+}
+entity Hotel {
+    nom String,
+    address String,
+    numTel String,
+    pays String,
+    ville String,
+    vueS String,
+    capacity Integer,
+    notation String,
+    lienUnique String
+}
+
+entity UIConfiguration {
+    colorSchema String,
+    logo String,
+    banner String,
+    dateCreation ZonedDateTime,
+    dateModify ZonedDateTime
+}
+
+entity EmailTemplateConfiguration {
+    nomTemplate String,
+    corps String,
+    dateCreation ZonedDateTime,
+    dateModify ZonedDateTime,
+    activeStatus Act
+}
+
+enum Act{
+    AVAILABLE, OFFLINE
+}
+
+entity AuthentificationConfiguration {
+    twoFactorEnabled Boolean,
+    loginPageCustomization String
+}
+
+entity Service {
+    nom String,
+    description String,
+    prix Float,
+    disposability String,
+    capacite Integer,
+    typeService String
+}
+
+entity Partenaire {
+    description String,
+    nom String,
+    contact String,
+    adresse String,
+    typePartenaire String
+}
+
+entity Reservation {
+    dateDebut ZonedDateTime,
+    dateFin ZonedDateTime,
+    totalPrix Float,
+    statutPaiement Statut,
+}
+
+enum Statut {
+    CONFIRME, EN_COURS, ANNULE
+}
+
+entity User {
+    nom String,
+    prenom String,
+    email String,
+    motDePasse String,
+    numTelephone String,
+    adresse String
+}
+
+entity Paiement {
+    montant Float,
+    datePaiement ZonedDateTime,
+    methodePaiement String,
+    token String,
+    description String
+}
+
+relationship OneToMany {
+    HotelAdministrateur{hotels} to Hotel
+    Hotel{services} to Service
+    Hotel{uiConfigurations} to UIConfiguration
+    Hotel{emailConfig} to EmailTemplateConfiguration
+    Hotel{authConfig} to AuthentificationConfiguration
+    Service{partenaire} to Partenaire
+    Partenaire{services} to Service
+    Reservation{service} to Service
+
+}
+
+relationship ManyToOne {
+    Reservation{hotel} to Hotel
+    Reservation{user} to User
+
+}
+
+//relationship OneToOne {
+  //  Hotel{reservation} to Reservation
+//}
+
+dto * with mapstruct
+service all with serviceClass
+paginate all with infinite-scroll

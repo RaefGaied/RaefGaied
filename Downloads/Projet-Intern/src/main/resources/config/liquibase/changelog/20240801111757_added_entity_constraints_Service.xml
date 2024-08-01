@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Service.
+    -->
+    <changeSet id="20240801111757-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="hotel_id"
+                                 baseTableName="service"
+                                 constraintName="fk_service__hotel_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="hotel"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="partenaire_id"
+                                 baseTableName="service"
+                                 constraintName="fk_service__partenaire_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="partenaire"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="reservation_id"
+                                 baseTableName="service"
+                                 constraintName="fk_service__reservation_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="reservation"
+                                 />
+    </changeSet>
+</databaseChangeLog>
