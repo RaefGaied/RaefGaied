@@ -1,0 +1,157 @@
+application {
+  config {
+    applicationType monolith
+    authenticationType jwt
+    baseName projectintern
+    buildTool maven
+    cacheProvider ehcache
+    clientFramework angular
+    clientTheme none
+    creationTimestamp 1722695266584
+    databaseType sql
+    devDatabaseType postgresql
+    enableHibernateCache true
+    enableSwaggerCodegen false
+    enableTranslation true
+    jhipsterVersion "8.6.0"
+    jwtSecretKey "ODE2ZGQzMGFjMDFkY2YzNGFhMDllYTMxNmJkM2Q4M2FhYWMwNWVjNWQ2ZmYzMzU2MDY2ODM2YzUzMTQyODcwNzQwZjcyOTcyN2RjYzFlODgwZTFjOTRkY2M2YTVmZDVlMjYxYmNlOGYzOTZkZDE2NmEzODBjY2I4Mzc0YWU3ZDc="
+    languages [en]
+    messageBroker false
+    microfrontends []
+    nativeLanguage en
+    packageName org.jhipster.projectintern
+    prodDatabaseType postgresql
+    reactive false
+    searchEngine false
+    serviceDiscoveryType false
+    testFrameworks []
+    websocket false
+    withAdminUi true
+  }
+}
+
+entity HotelAdministrateur {
+    Nom String,
+    Email String,
+    MotDePasse String
+}
+entity Hotel {
+    Nom String,
+    Addresse String,
+    NumeroTelephone Integer,
+    Pays String,
+    Ville String,
+    VueS String,
+    Capacite Integer,
+    Notation String,
+    LienUnique String
+}
+
+entity UIConfiguration {
+    ColorSchema String,
+    Logo String,
+    Banner String,
+    DateCreation ZonedDateTime,
+    DateModify ZonedDateTime
+}
+
+entity EmailTemplateConfiguration {
+    NomTemplate String,
+    Corps String,
+    DatedeCreation ZonedDateTime,
+    DatedeModification ZonedDateTime,
+    ActiveStatus Act
+}
+
+enum Act{
+    AVAILABLE, OFFLINE
+}
+
+entity AuthentificationConfiguration {
+    TwoFactorEnabled Boolean,
+    LoginPageCustomization String
+}
+
+entity Service {
+    Nom String,
+    Description String,
+    Prix Float,
+    Disponibilite String,
+    Capacite Integer,
+    TypeService String
+}
+
+entity Partenaire {
+    Description String,
+    Nom String,
+    Contact String,
+    Adresse String,
+    TypePartenaire String,
+
+}
+
+entity Reservation {
+    DateDebut ZonedDateTime,
+    DateFin ZonedDateTime,
+    NombrePersonnes Integer,
+    TotalPrix Float,
+    StatutPaiement Statut,
+}
+
+enum Statut {
+    CONFIRME, EN_COURS, ANNULE
+}
+
+entity User {
+    Nom String,
+    Prenom String,
+    Email String,
+    MotDePasse String,
+    NumeroTelephone String,
+    Adresse String
+}
+
+entity Paiement {
+    Montant Float,
+    DatePaiement ZonedDateTime,
+    MethodePaiement String,
+    Token String,
+    transactionId String,
+    Description String,
+    StatutPaiement PAIEMENT
+
+}
+
+enum PAIEMENT {
+    Reussi, Echoue
+}
+
+relationship OneToMany {
+    HotelAdministrateur{hotels} to Hotel
+    Hotel{services} to Service
+    Hotel{uiConfigurations} to UIConfiguration
+    Hotel{emailConfig} to EmailTemplateConfiguration
+    Hotel{authConfig} to AuthentificationConfiguration
+    Partenaire{services} to Service
+    Reservation{service} to Service
+
+}
+
+relationship ManyToOne {
+    Reservation{hotel} to Hotel
+    Reservation{user} to User
+
+}
+relationship OneToOne {
+    Paiement{reservation} to Reservation
+}
+
+
+/*relationship OneToMany {
+    Hotel{reservation} to Reservation
+}*/
+
+dto * with mapstruct
+service all with serviceClass
+paginate all with infinite-scroll
+
