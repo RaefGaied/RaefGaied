@@ -59,7 +59,6 @@
 > _"Java is the most distressing thing to hit computing since MS-DOS." — Alan Kay_
 
 ---
-
 ### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Weekly Development Breakdown
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
@@ -83,17 +82,18 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raefgaied&layout=compact&theme=radical" alt="Top Languages" width="350"/>
 </p>
 
+### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=raefgaied&theme=radical" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=raefgaied&theme=radical" alt="GitHub Streak" />
 </p>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&" alt="raefgaied" /></p>
 
 ---
 
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=raefgaied&theme=react-dark)
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=raefgaied&theme=react-dark" alt="GitHub Activity Graph" />
+</p>
 
----
 
 ### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> Connect with me:
 <p align="left">
