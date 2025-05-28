@@ -60,6 +60,14 @@
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
+### ⏳ Year Progress
+<!--START_SECTION:progress-->
+<!--END_SECTION:progress-->
+
+### 📊 Recent Activity
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
 ---
 
 <h3 align="left">Connect with me:</h3>
