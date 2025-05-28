@@ -86,6 +86,7 @@
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=raefgaied&theme=radical" alt="GitHub Streak" />
 </p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&" alt="raefgaied" /></p>
 
 ---
 
