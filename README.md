@@ -88,10 +88,11 @@
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=raefgaied&theme=radical" alt="GitHub Streak" width="60%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&theme=radical" alt="GitHub Streak" width="70%"/>
 </p>
 
 ---
+
 
 
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
