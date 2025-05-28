@@ -77,15 +77,22 @@
 </p>
 
 ### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> My Stats
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=raefgaied&show_icons=true&theme=radical" alt="GitHub Stats" width="420"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raefgaied&layout=compact&theme=radical" alt="Top Languages" width="350"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=raefgaied&show_icons=true&theme=radical" alt="GitHub Stats" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raefgaied&layout=compact&theme=radical" alt="Top Languages" width="45%"/>
 </p>
+
+---
 
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&" alt="raefgaied" /></p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=raefgaied&theme=radical" alt="GitHub Streak" width="60%"/>
+</p>
+
 ---
+
 
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
 <p align="center">
