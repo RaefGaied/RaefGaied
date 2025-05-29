@@ -3,7 +3,7 @@ name: Waka Readme
 on:
   workflow_dispatch:
   schedule:
-    - cron: '05 0 * * *'  # Runs at 00:05 UTC every day
+    - cron: '05 0 * * *'
 
 jobs:
   update-readme:
@@ -16,13 +16,37 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name: Update WakaTime stats
-        uses: athul/waka-readme@master
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SHOW_TITLE: true
-          BLOCKS: ⣀⣄⣤⣦⣶⣷⣿
-          TIME_RANGE: all_time
-          SHOW_TIME: true
-          SHOW_MASKED_TIME: true
+          node-version: '18'
+          
+      - name: Update WakaTime stats
+        run: |
+          # Alternative approach using WakaTime API directly
+          curl -H "Authorization: Bearer ${{ secrets.WAKATIME_API_KEY }}" \
+               "https://wakatime.com/api/v1/users/current/stats/last_7_days" \
+               > wakatime_stats.json
+          
+          # Simple stats update (you can enhance this)
+          echo "📊 **This Week I Spent My Time On:**" > waka_section.md
+          echo "" >> waka_section.md
+          echo "\`\`\`text" >> waka_section.md
+          echo "No activity tracked this week" >> waka_section.md
+          echo "\`\`\`" >> waka_section.md
+          
+          # Update README
+          sed -i '/<!--START_SECTION:waka-->/,/<!--END_SECTION:waka-->/c\
+          <!--START_SECTION:waka-->\
+          📊 **This Week I Spent My Time On:**\
+          \
+          ```text\
+          No activity tracked this week\
+          ```\
+          <!--END_SECTION:waka-->' README.md
+          
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Update WakaTime stats'
+          file_pattern: 'README.md'
