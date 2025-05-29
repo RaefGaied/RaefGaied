@@ -3,7 +3,7 @@ name: Update Quote Readme
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *"  # Runs daily at 1 AM UTC
+    - cron: "0 1 * * *"
 
 jobs:
   update-readme:
@@ -17,7 +17,30 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Update Quote
-        uses: ApoorvTyagi/quote-readme@main
+        run: |
+          # Array of programming quotes
+          quotes=(
+            "The best way to predict the future is to create it. - Peter Drucker"
+            "Code is like humor. When you have to explain it, it's bad. - Cory House"
+            "First, solve the problem. Then, write the code. - John Johnson"
+            "Experience is the name everyone gives to their mistakes. - Oscar Wilde"
+            "In order to be irreplaceable, one must always be different. - Coco Chanel"
+            "Java is to JavaScript what car is to Carpet. - Chris Heilmann"
+            "Knowledge is power. - Francis Bacon"
+            "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday's code. - Dan Salomon"
+          )
+          
+          # Select random quote
+          RANDOM_QUOTE=${quotes[$RANDOM % ${#quotes[@]}]}
+          
+          # Update README
+          sed -i "/<!--STARTS_HERE_QUOTE_README-->/,/<!--ENDS_HERE_QUOTE_README-->/c\\
+          <!--STARTS_HERE_QUOTE_README-->\\
+          <i>❝${RANDOM_QUOTE}❞</i>\\
+          <!--ENDS_HERE_QUOTE_README-->" README.md
+          
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          OPTION: both
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: 'Update random quote'
+          file_pattern: 'README.md'
