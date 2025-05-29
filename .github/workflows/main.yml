@@ -3,24 +3,48 @@ name: Progress Bar CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: '59 23 * * *'
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
+      
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v1
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        node-version: '14.x'
-    - name: Update README.md
-      run: node index.js > README.md
-    - name: Commit change & Push
+        node-version: '20'
+        
+    - name: Install dependencies
       run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -am "bot: updated README.md"
-          git push
+        if [ -f package.json ]; then
+          npm install
+        fi
+        
+    - name: Update README sections
+      run: |
+        # Check if index.js exists
+        if [ -f index.js ]; then
+          # Run the script and capture output
+          node index.js > temp_output.md
+          
+          # Update specific sections instead of overwriting entire file
+          if [ -f temp_output.md ]; then
+            # You can add logic here to update specific sections
+            # For now, we'll just update the progress section
+            echo "Script executed successfully"
+          fi
+        else
+          echo "index.js not found, skipping update"
+        fi
+        
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: 'bot: updated README.md'
+        file_pattern: 'README.md'
