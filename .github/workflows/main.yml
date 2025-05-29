@@ -3,7 +3,7 @@ name: Progress Bar CI
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -20,28 +20,31 @@ jobs:
       with:
         node-version: '20'
         
-    - name: Install dependencies
+    - name: Update Progress Bar
       run: |
-        if [ -f package.json ]; then
-          npm install
-        fi
+        # Calculate year progress
+        YEAR=$(date +%Y)
+        DAY_OF_YEAR=$(date +%j)
+        YEAR_PROGRESS=$(echo "scale=2; $DAY_OF_YEAR / 365 * 100" | bc -l)
         
-    - name: Update README sections
-      run: |
-        # Check if index.js exists
-        if [ -f index.js ]; then
-          # Run the script and capture output
-          node index.js > temp_output.md
-          
-          # Update specific sections instead of overwriting entire file
-          if [ -f temp_output.md ]; then
-            # You can add logic here to update specific sections
-            # For now, we'll just update the progress section
-            echo "Script executed successfully"
-          fi
-        else
-          echo "index.js not found, skipping update"
-        fi
+        # Create progress bar
+        FILLED=$(echo "$YEAR_PROGRESS / 3.33" | bc -l | cut -d. -f1)
+        PROGRESS_BAR=""
+        for i in $(seq 1 ${FILLED:-0}); do
+          PROGRESS_BAR="${PROGRESS_BAR}█"
+        done
+        for i in $(seq $((${FILLED:-0} + 1)) 30); do
+          PROGRESS_BAR="${PROGRESS_BAR}░"
+        done
+        
+        # Format date
+        CURRENT_DATE=$(date +'%d-%b-%Y')
+        
+        # Update the progress section
+        sed -i "/<!--START_SECTION:progress-->/,/<!--END_SECTION:progress-->/c\\
+        <!--START_SECTION:progress-->\\
+        ⏳ **Year Progress** { $PROGRESS_BAR } ${YEAR_PROGRESS}% as on ⏰ $CURRENT_DATE\\
+        <!--END_SECTION:progress-->" README.md
         
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v5
