@@ -44,8 +44,8 @@
 - [**Chest X-Ray AI App**](https://projetml-wmdmfhjokvwxxjrwpxt3xz.streamlit.app/)
 
 ### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> All of my projects are available at:
-- [http://projetraefgaied.free.nf/](http://projetraefgaied.free.nf/)
-
+- [https://raefgaied.netlify.app](https://raefgaied.netlify.app)
+  
 ### <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="30"> I regularly write articles on:
 - **Medium** (Coming Soon)
 
