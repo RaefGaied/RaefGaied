@@ -1,14 +1,9 @@
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/a5c3b05d-341f-4723-b6f4-483d9321becc" alt="banner" width="800"/>
-</p>
-
 <h1 align="center">
-  Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="35" />, I'm <strong>Raef Gaied</strong>
+  Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="28" />, I'm <strong>Raef Gaied</strong>
 </h1>
 
 <h3 align="center">
-  💻 Full-Stack Developer | ☁️ Cloud & AI Enthusiast | 🌍 From Tunisia 🇹🇳
-  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" />
+  💻 Full-Stack Developer · ☁️ Cloud & AI Enthusiast · 🌍 Tunisia 🇹🇳
 </h3>
 
 ---
