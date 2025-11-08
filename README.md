@@ -1,30 +1,31 @@
 <p align="center">
-![gid readme](https://github.com/user-attachments/assets/a5c3b05d-341f-4723-b6f4-483d9321becc)
-
+  <img src="https://github.com/user-attachments/assets/a5c3b05d-341f-4723-b6f4-483d9321becc" alt="banner" width="800"/>
 </p>
 
 <h1 align="center">
-  Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="35" />, I'm Raef Gaied
+  Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="35" />, I'm <strong>Raef Gaied</strong>
 </h1>
 
 <h3 align="center">
-  Full-Stack Developer | Cloud & AI Enthusiast | From Tunisia 🇹🇳
+  💻 Full-Stack Developer | ☁️ Cloud & AI Enthusiast | 🌍 From Tunisia 🇹🇳
   <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" />
 </h3>
 
+---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=raefgaied&label=Profile%20views&color=0e75b6&style=flat" alt="raefgaied" />
+  <img src="https://komarev.com/ghpvc/?username=raefgaied&label=Profile%20views&color=0e75b6&style=flat" alt="raefgaied profile views" />
   <a href="https://twitter.com/raefg81796" target="_blank">
     <img src="https://img.shields.io/twitter/follow/raefg81796?logo=twitter&style=for-the-badge" alt="Twitter Follow" />
   </a>
 </p>
 
+---
+
 <p align="center">
-  <img alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
+  <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="coding" width="450"/>
 </p>
 
----
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
