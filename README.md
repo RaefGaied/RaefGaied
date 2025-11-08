@@ -1,5 +1,6 @@
 <p align="center">
-![gid readme](https://github.com/user-attachments/assets/d890c2af-15a3-47a8-ae19-951d649add09)
+![gid readme](https://github.com/user-attachments/assets/a5c3b05d-341f-4723-b6f4-483d9321becc)
+
 </p>
 
 <h1 align="center">
