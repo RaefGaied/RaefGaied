@@ -46,7 +46,8 @@
 - **Medium** (Coming Soon)
 
 ### <img src="https://media.giphy.com/media/KzJkzjggfGN5Py6nkT/giphy.gif" width="30"> Ask me about:
-**React, Vue, GSAP, Spring Boot, MongoDB, Node.js, Bootstrap**
+**React, Angular, Spring Boot, Node.js, Express.js, SQL Server, MongoDB, REST APIs, gRPC, Docker, Python, FastAPI**
+
 
 ### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> How to reach me:
 **raef.gaied@gmail.com**
