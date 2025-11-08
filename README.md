@@ -1,6 +1,7 @@
 <!-- Header GIF -->
 <p align="center">
-![Uploading gid readme.gif…]()
+
+![gid readme](https://github.com/user-attachments/assets/d890c2af-15a3-47a8-ae19-951d649add09)
 
 
 </p>
