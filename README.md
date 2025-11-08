@@ -1,6 +1,7 @@
 <!-- Header GIF -->
 <p align="center">
-  <img src="https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/dempgi7-520f8d5f-63d4-4453-8822-dbc149ae27f8.gif?alt=media&token=91c0c7b2-93c3-4029-b011-1a8703c5730d" alt="MasterHead" />
+<img width="800" height="466" alt="image" src="https://github.com/user-attachments/assets/2df91bf8-a960-4006-8d1d-867606f81967" />
+
 </p>
 
 <h1 align="center">
@@ -8,8 +9,10 @@
 </h1>
 
 <h3 align="center">
-  A passionate full-stack developer from Tunisia 🇹🇳 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" />
+  Full-Stack Developer | Cloud & AI Enthusiast | From Tunisia 🇹🇳
+  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" />
 </h3>
+
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=raefgaied&label=Profile%20views&color=0e75b6&style=flat" alt="raefgaied" />
@@ -32,10 +35,10 @@
 
 ### <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="30"> I'm currently learning:
 - Angular Advanced Patterns  
-- Spring Security OAuth2  
-- Docker Compose  
-- Microservices with Kafka & gRPC  
-- CI/CD with GitHub Actions
+- Spring Boot Microservices with Kafka & gRPC  
+- Docker & Kubernetes  
+- CI/CD pipelines with GitHub Actions  
+- DevOps and Cloud Deployment (AWS / GCP)
 
 ### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> I'm looking to collaborate on:
 - **CineWise** (GitHub Repo Coming Soon)
