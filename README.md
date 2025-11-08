@@ -1,9 +1,5 @@
-<!-- Header GIF -->
 <p align="center">
-
 ![gid readme](https://github.com/user-attachments/assets/d890c2af-15a3-47a8-ae19-951d649add09)
-
-
 </p>
 
 <h1 align="center">
@@ -23,7 +19,6 @@
   </a>
 </p>
 
-<!-- Side Image -->
 <p align="center">
   <img alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 </p>
