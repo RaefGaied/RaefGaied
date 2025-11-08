@@ -1,6 +1,7 @@
 <!-- Header GIF -->
 <p align="center">
-<img width="800" height="466" alt="image" src="https://github.com/user-attachments/assets/2df91bf8-a960-4006-8d1d-867606f81967" />
+![Uploading gid readme.gif…]()
+
 
 </p>
 
