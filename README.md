@@ -33,7 +33,12 @@
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
 ### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> I'm currently working on:
-- [**ProjectIntern**](http://projetraefgaied.free.nf)
+- 🧠 Currently exploring **Microservices, DevOps & AI model integration**
+- 🚀 Building advanced full-stack apps with **Spring Boot + React (MERN/JEE hybrid)**
+- 🎯 Focused on **clean architecture, scalability, and automation**
+- 🌐 Check out my portfolio: [**raefgaied.netlify.app**](https://raefgaied.netlify.app)
+- 💬 Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, or ML**
+- 📫 Reach me at **raef.gaied@gmail.com**
 
 ### <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="30"> I'm currently learning:
 - Angular Advanced Patterns  
@@ -41,12 +46,6 @@
 - Docker & Kubernetes  
 - CI/CD pipelines with GitHub Actions  
 - DevOps and Cloud Deployment (AWS / GCP)
-
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> I'm looking to collaborate on:
-- **CineWise** (GitHub Repo Coming Soon)
-
-### <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="30"> I'm looking for help with:
-- [**Chest X-Ray AI App**](https://projetml-wmdmfhjokvwxxjrwpxt3xz.streamlit.app/)
 
 ### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> All of my projects are available at:
 - [https://raefgaied.netlify.app](https://raefgaied.netlify.app)
