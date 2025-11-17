@@ -28,7 +28,7 @@
 - 🧠 Currently exploring **Microservices, DevOps & AI model integration**
 - 🚀 Building advanced full-stack apps with **Spring Boot + React (MERN/JEE hybrid)**
 - 🎯 Focused on **clean architecture, scalability, and automation**
-- 🌐 Check out my portfolio: [**raefgaied.netlify.app**](https://raefgaied.netlify.app)
+- 🌐 Check out my portfolio: [**portfolio-raef-gaied.vercel.app/**](https://portfolio-raef-gaied.vercel.app/)
 - 💬 Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, or ML**
 - 📫 Reach me at **raef.gaied@gmail.com**
 
@@ -40,7 +40,7 @@
 - DevOps and Cloud Deployment (AWS / GCP)
 
 ### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> All of my projects are available at:
-- [https://raefgaied.netlify.app](https://raefgaied.netlify.app)
+- [https://raefgaied.netlify.app](https://portfolio-raef-gaied.vercel.app/)
   
 ### <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="30"> I regularly write articles on:
 - **Medium** (Coming Soon)
