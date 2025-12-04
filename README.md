@@ -47,7 +47,7 @@
 ### GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=dracula&column=7&no-frame=true" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=dracula&column=7&no-frame=true&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
 
 ---
@@ -55,8 +55,8 @@
 ### My Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8" alt="Top Languages" width="45%"/>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8" alt="Top Languages" width="45%"/>
 </p>
 
 ---
@@ -72,7 +72,11 @@
 ### Contribution Snake
 
 <p align="center">
-  <img src="https://github.com/RaefGaied/RaefGaied/blob/output/snake.svg" alt="Snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RaefGaied/RaefGaied/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RaefGaied/RaefGaied/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/RaefGaied/RaefGaied/output/github-snake.svg" />
+  </picture>
 </p>
 
 ---
