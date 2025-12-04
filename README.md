@@ -54,51 +54,47 @@
 > _"Java is the most distressing thing to hit computing since MS-DOS." — Alan Kay_
 
 ---
-### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Weekly Development Breakdown
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
 
-### <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="30"> Year Progress
-<!--START_SECTION:progress-->
-<!--END_SECTION:progress-->
-
-### <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="30"> Recent Activity
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
----
-### GitHub Trophies
-
+### <img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
-  <!-- Using alternative with cache busting -->
-  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=dracula&column=7&no-frame=true&no-bg=false&margin-w=4" alt="GitHub Trophies" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=onedark&no-frame=true&column=7" alt="GitHub Trophies" />
+  </a>
 </p>
 
 ---
 
-### My Stats
+### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> GitHub Stats
 
 <p align="center">
-  <!-- Using alternative stats cards with different theme to avoid rate limits -->
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8" alt="Top Languages" width="45%"/>
+  <!-- Stats Card -->
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  </a>
+  <!-- Top Languages -->
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
+  </a>
 </p>
 
 ---
 
-### GitHub Streak
+### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=RaefGaied&theme=radical" alt="GitHub Streak" width="70%"/>
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" width="90%" />
+  </a>
 </p>
-
----
 
 ---
 
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark&hide_border=true&area=true" alt="GitHub Activity Graph" width="90%" />
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark&area=true&hide_border=true" alt="GitHub Activity Graph" width="90%" />
+  </a>
 </p>
 
 ---
@@ -139,35 +135,19 @@
   <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40"/></a>
   <a href="https://fastapi.tiangolo.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="40" height="40"/></a>
   <a href="https://flask.palletsprojects.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="40" height="40"/></a>
-  <a href="https://restfulapi.net" target="_blank"><img src="https://www.vectorlogo.zone/logos/json/json-icon.svg" width="40" height="40"/></a>
-  <a href="https://graphql.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" width="40" height="40"/></a>
-  <a href="https://grpc.io" target="_blank"><img src="https://grpc.io/img/logos/grpc-icon-color.png" width="40" height="40"/></a>
   <a href="https://www.mysql.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40"/></a>
   <a href="https://www.postgresql.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="40" height="40"/></a>
   <a href="https://www.mongodb.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" width="40" height="40"/></a>
   <a href="https://www.microsoft.com/sql-server" target="_blank"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" width="40" height="40"/></a>
-  <a href="https://sqlite.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" width="40" height="40"/></a>
-  <a href="https://developer.android.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" width="40" height="40"/></a>
-  <a href="https://kotlinlang.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" width="40" height="40"/></a>
   <a href="https://www.tensorflow.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" width="40" height="40"/></a>
-  <a href="https://keras.io" target="_blank"><img src="https://miro.medium.com/v2/resize:fit:600/1*DKu_54iqz6C-p6ndo7rO3g.png" width="40" height="40"/></a>
   <a href="https://scikit-learn.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="40" height="40"/></a>
-  <a href="https://opencv.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" width="40" height="40"/></a>
-  <a href="https://pandas.pydata.org" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="40" height="40"/>
-  </a>
-  <a href="https://numpy.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" width="40" height="40"/></a>
+  <a href="https://pandas.pydata.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="40" height="40"/></a>
   <a href="https://aws.amazon.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="40" height="40"/></a>
-  <a href="https://azure.microsoft.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" width="40" height="40"/></a>
   <a href="https://www.docker.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" width="40" height="40"/></a>
   <a href="https://kubernetes.io" target="_blank"><img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" width="40" height="40"/></a>
-  <a href="https://www.jenkins.io" target="_blank"><img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" width="40" height="40"/></a>
-  <a href="https://kafka.apache.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" width="40" height="40"/></a>
   <a href="https://github.com" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="40" height="40"/></a>
-  <a href="https://gitlab.com" target="_blank"><img src="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" width="40" height="40"/></a>
   <a href="https://www.postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40" height="40"/></a>
   <a href="https://linux.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40" height="40"/></a>
-  <a href="https://www.gnu.org/software/bash/" target="_blank"><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" width="40" height="40"/></a>
 </p>
 
 ---
@@ -181,7 +161,7 @@
 
 ### <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="30"> Random Dev Joke
 <p align="center">
-  <img src="https://readme-jokes.vercel.app/api?hideBorder&theme=radical" alt="Jokes Card" />
+  <img src="https://readme-jokes.vercel.app/api?theme=radical&hideBorder" alt="Jokes Card" />
 </p>
 
 ---
