@@ -45,7 +45,7 @@
 
 ### <img src="https://media.giphy.com/media/qa0OnjcqJ1qfuK2vQJ/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=onedark&no-frame=true&column=7&margin-w=10&margin-h=10" />
+  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=radical&no-frame=true&row=2&column=4" alt="RaefGaied Trophies" />
 </p>
 
 ---
@@ -53,17 +53,9 @@
 ### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> GitHub Stats
 
 <p align="center">
-
-  <!-- Stats Card - Mirror -->
-  <img height="180em" 
-       src="https://github-readme-stats-git-masterorgs-anuraghazra.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true&cache_seconds=86400" 
-       alt="GitHub Stats" />
-
-  <!-- Top Languages - Mirror -->
-  <img height="180em" 
-       src="https://github-readme-stats-git-masterorgs-anuraghazra.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8&cache_seconds=86400" 
-       alt="Top Languages" />
-
+  <img src="https://github-readme-stats-raef.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="RaefGaied GitHub Stats" />
+  
+  <img src="https://github-readme-stats-raef.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8&hide_border=true" alt="RaefGaied Top Languages" />
 </p>
 
 ---
@@ -71,7 +63,7 @@
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D&cache_seconds=86400" width="90%" />
+  <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="RaefGaied GitHub Streak" width="90%" />
 </p>
 
 ---
@@ -79,10 +71,8 @@
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark&area=true&hide_border=true&cache_seconds=86400" width="90%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=github-dark&area=true&hide_border=true&custom_title=Raef's%20Contribution%20Graph" alt="RaefGaied Activity Graph" width="90%" />
 </p>
-
----
 
 ---
 
