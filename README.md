@@ -70,16 +70,14 @@
 
 ### <img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=onedark&column=7" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=raefgaied&theme=dracula&column=7" alt="GitHub Trophies" />
 </p>
-
----
 
 ### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> My Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&hide_border=true&langs_count=10" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=raefgaied&show_icons=true&theme=radical" alt="GitHub Stats" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raefgaied&layout=compact&theme=radical" alt="Top Languages" width="45%"/>
 </p>
 
 ---
@@ -87,7 +85,7 @@
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=RaefGaied&theme=radical&hide_border=true" alt="GitHub Streak" width="90%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&theme=radical" alt="GitHub Streak" width="70%"/>
 </p>
 
 ---
