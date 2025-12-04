@@ -3,13 +3,13 @@
 </h1>
 
 <h3 align="center">
-  💻 Full-Stack Developer · ☁️ Cloud & AI Enthusiast · 🌍 Tunisia 🇹🇳
+  Full-Stack Developer | Cloud & AI Enthusiast | Tunisia
 </h3>
 
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=RaefGaied&label=Profile%20views&color=0e75b6&style=flat" alt="raefgaied profile views" />
+  <img src="https://komarev.com/ghpvc/?username=RaefGaied&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
   <a href="https://twitter.com/raefg81796" target="_blank">
     <img src="https://img.shields.io/twitter/follow/raefg81796?logo=twitter&style=for-the-badge" alt="Twitter Follow" />
   </a>
@@ -21,58 +21,38 @@
   <img src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" alt="coding" width="450"/>
 </p>
 
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
+---
 
-### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> I'm currently working on:
-- 🧠 Currently exploring **Microservices, DevOps & AI model integration**
-- 🚀 Building advanced full-stack apps with **Spring Boot + React (MERN/JEE hybrid)**
-- 🎯 Focused on **clean architecture, scalability, and automation**
-- 🌐 Check out my portfolio: [**portfolio-raef-gaied.vercel.app**](https://portfolio-raef-gaied.vercel.app/)
-- 💬 Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, or ML**
-- 📫 Reach me at **raef.gaied@gmail.com**
+### About Me
 
-### <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="30"> I'm currently learning:
+- Currently exploring **Microservices, DevOps & AI model integration**
+- Building advanced full-stack apps with **Spring Boot + React**
+- Focused on **clean architecture, scalability, and automation**
+- Portfolio: [**portfolio-raef-gaied.vercel.app**](https://portfolio-raef-gaied.vercel.app/)
+- Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, or ML**
+- Reach me at **raef.gaied@gmail.com**
+
+---
+
+### Currently Learning
+
 - Angular Advanced Patterns  
 - Spring Boot Microservices with Kafka & gRPC  
 - Docker & Kubernetes  
 - CI/CD pipelines with GitHub Actions  
 - DevOps and Cloud Deployment (AWS / GCP)
 
-### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> All of my projects are available at:
-- [https://portfolio-raef-gaied.vercel.app](https://portfolio-raef-gaied.vercel.app/)
-  
-### <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="30"> I regularly write articles on:
-- **Medium** (Coming Soon)
-
-### <img src="https://media.giphy.com/media/KzJkzjggfGN5Py6nkT/giphy.gif" width="30"> Ask me about:
-**React, Angular, Spring Boot, Node.js, Express.js, SQL Server, MongoDB, REST APIs, gRPC, Docker, Python, FastAPI**
-
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> How to reach me:
-**raef.gaied@gmail.com**
-
-### <img src="https://media.giphy.com/media/qjqUcgIyRjsl2/giphy.gif" width="30"> Fun fact:
-> _"Java is the most distressing thing to hit computing since MS-DOS." — Alan Kay_
-
 ---
 
-### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> Weekly Development Breakdown
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+### GitHub Trophies
 
-### <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="30"> Year Progress
-<!--START_SECTION:progress-->
-<!--END_SECTION:progress-->
-
-### <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="30"> Recent Activity
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
-### <img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=dracula&column=7&no-frame=true" alt="GitHub Trophies" />
 </p>
 
-### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> My Stats
+---
+
+### My Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
@@ -81,29 +61,43 @@
 
 ---
 
-### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
+### GitHub Streak
 
 <p align="center">
-  <!-- FIXED: Changed from herokuapp.com to streak-stats.demolab.com -->
   <img src="https://streak-stats.demolab.com/?user=RaefGaied&theme=radical" alt="GitHub Streak" width="70%"/>
 </p>
 
 ---
 
-### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
+### Contribution Snake
+
+<p align="center">
+  <img src="https://github.com/RaefGaied/RaefGaied/blob/output/snake.svg" alt="Snake animation" />
+</p>
+
+---
+
+### Contribution Graph
+
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark" alt="GitHub Activity Graph" />
 </p>
 
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> Connect with me:
+---
+
+### Connect with me
+
 <p align="left">
-  <a href="https://twitter.com/raefg81796" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="raefg81796" height="30" width="40" /></a>
-  <a href="https://linkedin.com/in/raef-gaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="raef-gaied" height="30" width="40" /></a>
-  <a href="https://kaggle.com/raefgaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="raefgaied" height="30" width="40" /></a>
-  <a href="https://fb.com/raef.gaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="raef.gaied" height="30" width="40" /></a>
+  <a href="https://twitter.com/raefg81796" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="twitter" height="30" width="40" /></a>
+  <a href="https://linkedin.com/in/raef-gaied" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" width="40" /></a>
+  <a href="https://kaggle.com/raefgaied" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="kaggle" height="30" width="40" /></a>
+  <a href="https://fb.com/raef.gaied" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="facebook" height="30" width="40" /></a>
 </p>
 
-### <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="30"> Languages and Tools:
+---
+
+### Languages and Tools
+
 <p align="left">
   <a href="https://angular.io" target="_blank"><img src="https://angular.io/assets/images/logos/angular/angular.svg" width="40" height="40"/></a>
   <a href="https://reactjs.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width="40" height="40"/></a>
@@ -121,7 +115,6 @@
   <a href="https://www.python.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40"/></a>
   <a href="https://fastapi.tiangolo.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="40" height="40"/></a>
   <a href="https://flask.palletsprojects.com" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="40" height="40"/></a>
-  <a href="https://restfulapi.net" target="_blank"><img src="https://www.vectorlogo.zone/logos/json/json-icon.svg" width="40" height="40"/></a>
   <a href="https://graphql.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" width="40" height="40"/></a>
   <a href="https://grpc.io" target="_blank"><img src="https://grpc.io/img/logos/grpc-icon-color.png" width="40" height="40"/></a>
   <a href="https://www.mysql.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40" height="40"/></a>
@@ -132,7 +125,6 @@
   <a href="https://developer.android.com" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" width="40" height="40"/></a>
   <a href="https://kotlinlang.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" width="40" height="40"/></a>
   <a href="https://www.tensorflow.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" width="40" height="40"/></a>
-  <a href="https://keras.io" target="_blank"><img src="https://miro.medium.com/v2/resize:fit:600/1*DKu_54iqz6C-p6ndo7rO3g.png" width="40" height="40"/></a>
   <a href="https://scikit-learn.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="40" height="40"/></a>
   <a href="https://opencv.org" target="_blank"><img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" width="40" height="40"/></a>
   <a href="https://pandas.pydata.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" width="40" height="40"/></a>
@@ -152,24 +144,10 @@
 
 ---
 
-### <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="30"> Random Dev Quote
+### Random Dev Quote
+
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
-</p>
-
----
-
-### <img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="30"> Random Dev Joke
-<p align="center">
-  <img src="https://readme-jokes.vercel.app/api?hideBorder&theme=radical" alt="Jokes Card" />
-</p>
-
----
-
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> Let's Connect and Build Something Amazing Together!
-
-<p align="center">
-  <img src="https://media.giphy.com/media/jpVnC65DmYeyRL4LHS/giphy.gif" width="70%" height="65px"/>
 </p>
 
 ---
