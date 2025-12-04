@@ -42,10 +42,9 @@
 - [**raef-gaied-portfolio.vercel.app**](https://raef-gaied-portfolio.vercel.app/)
 
 ---
-
 ### <img src="https://media.giphy.com/media/qa0OnjcqJ1qfuK2vQJ/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
-  <img src="https://trophy.rey.vercel.app/?username=RaefGaied&theme=radical&margin-w=15&margin-h=15&no-frame=true" alt="RaefGaied Trophies" />
+  <img src="https://github-trophies.vercel.app/?username=RaefGaied&theme=radical&no-frame=true&row=2&column=4" alt="RaefGaied Trophies" />
 </p>
 
 ---
