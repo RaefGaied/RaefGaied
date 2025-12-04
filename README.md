@@ -67,26 +67,32 @@
 <!--END_SECTION:activity-->
 
 ---
-
-### <img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="30"> GitHub Trophies
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=raefgaied&theme=dracula&column=7" alt="GitHub Trophies" />
-</p>
-
-### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> My Stats
+### GitHub Trophies
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=raefgaied&show_icons=true&theme=radical" alt="GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raefgaied&layout=compact&theme=radical" alt="Top Languages" width="45%"/>
+  <!-- Using alternative with cache busting -->
+  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=dracula&column=7&no-frame=true&no-bg=false&margin-w=4" alt="GitHub Trophies" />
 </p>
 
 ---
 
-### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
+### My Stats
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&theme=radical" alt="GitHub Streak" width="70%"/>
+  <!-- Using alternative stats cards with different theme to avoid rate limits -->
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" width="45%"/>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8" alt="Top Languages" width="45%"/>
 </p>
+
+---
+
+### GitHub Streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=RaefGaied&theme=radical" alt="GitHub Streak" width="70%"/>
+</p>
+
+---
 
 ---
 
