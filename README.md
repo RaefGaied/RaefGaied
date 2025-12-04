@@ -9,7 +9,8 @@
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=raefgaied&label=Profile%20views&color=0e75b6&style=flat" alt="raefgaied profile views" />
+  <!-- <CHANGE> Fixed username to RaefGaied (case-sensitive) -->
+  <img src="https://komarev.com/ghpvc/?username=RaefGaied&label=Profile%20views&color=0e75b6&style=flat" alt="raefgaied profile views" />
   <a href="https://twitter.com/raefg81796" target="_blank">
     <img src="https://img.shields.io/twitter/follow/raefg81796?logo=twitter&style=for-the-badge" alt="Twitter Follow" />
   </a>
@@ -28,7 +29,8 @@
 - 🧠 Currently exploring **Microservices, DevOps & AI model integration**
 - 🚀 Building advanced full-stack apps with **Spring Boot + React (MERN/JEE hybrid)**
 - 🎯 Focused on **clean architecture, scalability, and automation**
-- 🌐 Check out my portfolio: [**portfolio-raef-gaied.vercel.app/**](https://portfolio-raef-gaied.vercel.app/)
+<!-- <CHANGE> Fixed portfolio URL -->
+- 🌐 Check out my portfolio: [**portfolio-raef-gaied.vercel.app**](https://portfolio-raef-gaied.vercel.app/)
 - 💬 Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, or ML**
 - 📫 Reach me at **raef.gaied@gmail.com**
 
@@ -40,7 +42,8 @@
 - DevOps and Cloud Deployment (AWS / GCP)
 
 ### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> All of my projects are available at:
-- [https://raefgaied.netlify.app](https://portfolio-raef-gaied.vercel.app/)
+<!-- <CHANGE> Fixed portfolio URL -->
+- [https://portfolio-raef-gaied.vercel.app](https://portfolio-raef-gaied.vercel.app/)
   
 ### <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="30"> I regularly write articles on:
 - **Medium** (Coming Soon)
@@ -70,14 +73,16 @@
 
 ### <img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=raefgaied&theme=dracula&column=7" alt="GitHub Trophies" />
+  <!-- <CHANGE> Fixed username to RaefGaied (case-sensitive) -->
+  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=dracula&column=7" alt="GitHub Trophies" />
 </p>
 
 ### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> My Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=raefgaied&show_icons=true&theme=radical" alt="GitHub Stats" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raefgaied&layout=compact&theme=radical" alt="Top Languages" width="45%"/>
+  <!-- <CHANGE> Fixed username to RaefGaied (case-sensitive) -->
+  <img src="https://github-readme-stats.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical" alt="GitHub Stats" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical" alt="Top Languages" width="45%"/>
 </p>
 
 ---
@@ -85,23 +90,25 @@
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=raefgaied&theme=radical" alt="GitHub Streak" width="70%"/>
+  <!-- <CHANGE> Fixed username to RaefGaied (case-sensitive) -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RaefGaied&theme=radical" alt="GitHub Streak" width="70%"/>
 </p>
 
 ---
 
-
-
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=raefgaied&theme=react-dark" alt="GitHub Activity Graph" />
+  <!-- <CHANGE> Fixed username to RaefGaied (case-sensitive) -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark" alt="GitHub Activity Graph" />
 </p>
 
 
 ### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> Connect with me:
 <p align="left">
-<a href="https://twitter.com/@raefg81796" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@raefg81796" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/in/raefgaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="in/raefgaied" height="30" width="40" /></a>
+<!-- <CHANGE> Fixed Twitter URL (removed extra @) -->
+<a href="https://twitter.com/raefg81796" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="raefg81796" height="30" width="40" /></a>
+<!-- <CHANGE> Fixed LinkedIn URL (removed duplicate in/) -->
+<a href="https://linkedin.com/in/raefgaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="raefgaied" height="30" width="40" /></a>
 <a href="https://kaggle.com/raefgaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="raefgaied" height="30" width="40" /></a>
 <a href="https://fb.com/raef.gaied" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="raef.gaied" height="30" width="40" /></a>
 </p>
@@ -184,4 +191,3 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
-```
