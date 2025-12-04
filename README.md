@@ -24,42 +24,28 @@
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
 ### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> I'm currently working on:
-- 🧠 Currently exploring **Microservices, DevOps & AI model integration**
-- 🚀 Building advanced full-stack apps with **Spring Boot + React (MERN/JEE hybrid)**
-- 🎯 Focused on **clean architecture, scalability, and automation**
-- 🌐 Check out my portfolio: [**raef-gaied-portfolio.vercel.app**](https://raef-gaied-portfolio.vercel.app/)
-- 💬 Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, or ML**
-- 📫 Reach me at **raef.gaied@polytechnicien.tn**
+- 🧠 Exploring **Microservices, DevOps & AI model integration**
+- 🚀 Building full-stack apps with **Spring Boot + React (MERN/JEE hybrid)**
+- 🎯 Focused on **clean architecture & scalability**
+- 🌐 Portfolio: [**raef-gaied-portfolio.vercel.app**](https://raef-gaied-portfolio.vercel.app/)
+- 💬 Ask me about **React, Spring Boot, Node.js, SQL Server, Docker, ML**
+- 📫 Contact: **raef.gaied@polytechnicien.tn**
 
 ### <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="30"> I'm currently learning:
 - Angular Advanced Patterns  
-- Spring Boot Microservices with Kafka & gRPC  
+- Spring Boot Microservices, Kafka, gRPC  
 - Docker & Kubernetes  
-- CI/CD pipelines with GitHub Actions  
-- DevOps and Cloud Deployment (AWS / GCP)
+- CI/CD with GitHub Actions  
+- DevOps & Cloud (AWS / GCP)
 
-### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> All of my projects are available at:
+### <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="30"> Projects:
 - [**raef-gaied-portfolio.vercel.app**](https://raef-gaied-portfolio.vercel.app/)
-  
-### <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="30"> I regularly write articles on:
-- **Medium** (Coming Soon)
-
-### <img src="https://media.giphy.com/media/KzJkzjggfGN5Py6nkT/giphy.gif" width="30"> Ask me about:
-**React, Angular, Spring Boot, Node.js, Express.js, SQL Server, MongoDB, REST APIs, gRPC, Docker, Python, FastAPI**
-
-### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> How to reach me:
-**raef.gaied@polytechnicien.tn**
-
-### <img src="https://media.giphy.com/media/qjqUcgIyRjsl2/giphy.gif" width="30"> Fun fact:
-> _"Java is the most distressing thing to hit computing since MS-DOS." — Alan Kay_
 
 ---
 
-### <img src="https://media.giphy.com/media/QaMcXSekUWx7aogAUr/giphy.gif" width="30"> GitHub Trophies
+### <img src="https://media.giphy.com/media/qa0OnjcqJ1qfuK2vQJ/giphy.gif" width="30"> GitHub Trophies
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=onedark&no-frame=true&column=7" alt="GitHub Trophies" />
-  </a>
+  <img src="https://github-profile-trophy.vercel.app/?username=RaefGaied&theme=onedark&no-frame=true&column=7&margin-w=10&margin-h=10" />
 </p>
 
 ---
@@ -67,14 +53,17 @@
 ### <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30"> GitHub Stats
 
 <p align="center">
-  <!-- Stats Card -->
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  </a>
-  <!-- Top Languages -->
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
-  </a>
+
+  <!-- Stats Card - Mirror -->
+  <img height="180em" 
+       src="https://github-readme-stats-git-masterorgs-anuraghazra.vercel.app/api?username=RaefGaied&show_icons=true&theme=radical&include_all_commits=true&count_private=true&cache_seconds=86400" 
+       alt="GitHub Stats" />
+
+  <!-- Top Languages - Mirror -->
+  <img height="180em" 
+       src="https://github-readme-stats-git-masterorgs-anuraghazra.vercel.app/api/top-langs/?username=RaefGaied&layout=compact&theme=radical&langs_count=8&cache_seconds=86400" 
+       alt="Top Languages" />
+
 </p>
 
 ---
@@ -82,9 +71,7 @@
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
 <p align="center">
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" width="90%" />
-  </a>
+  <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D&cache_seconds=86400" width="90%" />
 </p>
 
 ---
@@ -92,10 +79,10 @@
 ### <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30"> Contribution Graph
 
 <p align="center">
-  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark&area=true&hide_border=true" alt="GitHub Activity Graph" width="90%" />
-  </a>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaefGaied&theme=react-dark&area=true&hide_border=true&cache_seconds=86400" width="90%" />
 </p>
+
+---
 
 ---
 
