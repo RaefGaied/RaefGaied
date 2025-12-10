@@ -8,10 +8,17 @@
 
 ---
 
+<!-- UPDATED: New modern badge design with LinkedIn instead of Twitter -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=RaefGaied&label=Profile%20views&color=0e75b6&style=flat" alt="RaefGaied profile views" />
-  <a href="https://twitter.com/raefg81796" target="_blank">
-    <img src="https://img.shields.io/twitter/follow/raefg81796?logo=twitter&style=for-the-badge" alt="Twitter Follow" />
+  <img src="https://komarev.com/ghpvc/?username=RaefGaied&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="RaefGaied profile views" />
+  <a href="https://www.linkedin.com/in/raef-gaied-2931ba288/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:raef.gaied@polytechnicien.tn">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://raef-gaied-portfolio.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
 </p>
 
@@ -61,8 +68,11 @@
 
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
+<!-- FIXED: Using herokuapp instead of demolab to fix crashing issue -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="RaefGaied GitHub Streak" width="90%" />
+  <a href="https://git.io/streak-stats">
+    <img src="https://github-readme-streak-stats.herokuapp.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="RaefGaied GitHub Streak" />
+  </a>
 </p>
 
 ---
@@ -76,17 +86,15 @@
 ---
 
 ### <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="30"> Connect with me:
+<!-- UPDATED: Removed Twitter, updated LinkedIn URL -->
 <p align="left">
-  <a href="https://twitter.com/raefg81796" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="raefg81796" height="30" width="40" />
-  </a>
-  <a href="https://linkedin.com/in/raef-gaied" target="blank">
+  <a href="https://www.linkedin.com/in/raef-gaied-2931ba288/" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="raef-gaied" height="30" width="40" />
   </a>
-  <a href="https://kaggle.com/raefgaied" target="blank">
+  <a href="https://kaggle.com/raefgaied" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="raefgaied" height="30" width="40" />
   </a>
-  <a href="https://fb.com/raef.gaied" target="blank">
+  <a href="https://fb.com/raef.gaied" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="raef.gaied" height="30" width="40" />
   </a>
 </p>
