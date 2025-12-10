@@ -68,10 +68,9 @@
 
 ### <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="30"> GitHub Streak
 
-<!-- FIXED: Using herokuapp instead of demolab to fix crashing issue -->
 <p align="center">
   <a href="https://git.io/streak-stats">
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="RaefGaied GitHub Streak" />
+    <img src="https://streak-stats.demolab.com?user=RaefGaied&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" width="90%" />
   </a>
 </p>
 
