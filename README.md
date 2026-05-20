@@ -1,6 +1,5 @@
 <h1 align="center">
-  Hi <img src="<img width="1920" height="1080" alt="68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f62632f36342f65632f62633634656361326163323434643738383664356461333965626366313361372e676966" src="https://github.com/user-attachments/assets/545019ce-2f7d-468b-b711-eeedb6bac9a8" />
-" width="28" />, I'm <strong>Raef Gaied</strong>
+  Hi <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="28" />, I'm <strong>Raef Gaied</strong>
 </h1>
 
 <h3 align="center">
@@ -26,8 +25,9 @@
 ---
 
 <p align="center">
-  <img src="[https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif](https://camo.githubusercontent.com/e592b32105c3dcc9b23cd9808515f8ad71fb69a517928c397631a4d1eddcfbe7/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f62632f36342f65632f62633634656361326163323434643738383664356461333965626366313361372e676966)" alt="coding" width="450"/>
+  <img src="https://camo.githubusercontent.com/e592b32105c3dcc9b23cd9808515f8ad71fb69a517928c397631a4d1eddcfbe7/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f62632f36342f65632f62633634656361326163323434643738383664356461333965626366313361372e676966" alt="coding" width="450"/>
 </p>
+
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
