@@ -1,8 +1,6 @@
 <h1 align="center">
-  Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrng815u/giphy.gif" width="35" />, I'm <strong>Raef Gaied</strong>
+  Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="35" />, I'm <strong>Raef Gaied</strong>
 </h1>
-
-<h3 align="center">
 
 <h3 align="center">
   💻 Full-Stack Developer · ☁️ Cloud & AI Enthusiast · 🌍 Tunisia 🇹🇳
